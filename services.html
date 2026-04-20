@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore HarborCare services including general consultations, health checks, women's health support, chronic care reviews, and telehealth.">
+  <title>Services | HarborCare</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="services">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand" aria-label="HarborCare home">
+        <span class="brand-mark" aria-hidden="true">H</span>
+        <span>
+          <strong>HarborCare</strong>
+          <small>Family &amp; Primary Care</small>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="is-active" href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a class="button button-primary nav-cta" href="contact.html#consultation-form">Book a consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero page-hero-services">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow">Services &amp; care pathways</p>
+          <h1>Find the support that fits your needs.</h1>
+          <p class="lead">From routine appointments to long-term care planning, HarborCare brings essential services together in one clear, easy-to-navigate place.</p>
+        </div>
+        <div class="page-hero-card card-surface">
+          <img src="assets/images/services-overview.svg" alt="Illustration of a healthcare dashboard with service cards, a calendar, and patient support icons.">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-header">
+        <div>
+          <p class="eyebrow">Service finder</p>
+          <h2>Browse by care type</h2>
+        </div>
+        <p>Use the filters below to narrow services by preventive care, primary care, ongoing support, or digital appointments.</p>
+      </div>
+
+      <div class="filter-toolbar card-surface" data-filter-toolbar>
+        <div class="filter-chips" role="group" aria-label="Filter services">
+          <button class="chip is-selected" data-filter="all" aria-pressed="true">All services</button>
+          <button class="chip" data-filter="preventive" aria-pressed="false">Preventive</button>
+          <button class="chip" data-filter="primary" aria-pressed="false">Primary care</button>
+          <button class="chip" data-filter="ongoing" aria-pressed="false">Ongoing support</button>
+          <button class="chip" data-filter="digital" aria-pressed="false">Digital care</button>
+        </div>
+        <p class="filter-status" aria-live="polite">Showing all services.</p>
+      </div>
+
+      <div class="services-grid" data-service-grid>
+        <article class="service-card card-surface reveal" data-category="primary preventive">
+          <span class="tag">Primary care</span>
+          <h3>General consultations</h3>
+          <p>Appointments for common health concerns, referrals, repeat prescriptions, certificates, and treatment advice.</p>
+          <ul>
+            <li>New and existing patients welcome</li>
+            <li>Suitable for a wide range of everyday concerns</li>
+            <li>Referral and follow-up coordination</li>
+          </ul>
+        </article>
+
+        <article class="service-card card-surface reveal" data-category="preventive">
+          <span class="tag">Preventive</span>
+          <h3>Annual health checks</h3>
+          <p>Routine health reviews focused on early intervention, screening, lifestyle guidance, and long-term wellbeing.</p>
+          <ul>
+            <li>Health screening support</li>
+            <li>Preventive care discussions</li>
+            <li>Clear next-step guidance</li>
+          </ul>
+        </article>
+
+        <article class="service-card card-surface reveal" data-category="ongoing">
+          <span class="tag">Ongoing support</span>
+          <h3>Chronic condition reviews</h3>
+          <p>Regular review appointments for ongoing conditions with care planning, medication checks, and progress follow-up.</p>
+          <ul>
+            <li>Care plan reviews</li>
+            <li>Routine monitoring conversations</li>
+            <li>Continuity with your care team</li>
+          </ul>
+        </article>
+
+        <article class="service-card card-surface reveal" data-category="digital primary">
+          <span class="tag">Digital care</span>
+          <h3>Telehealth consultations</h3>
+          <p>Virtual appointments for suitable concerns when a phone or video consultation is more convenient than visiting in person.</p>
+          <ul>
+            <li>Simple booking enquiries</li>
+            <li>Helpful for selected follow-up care</li>
+            <li>Designed for convenience and clarity</li>
+          </ul>
+        </article>
+
+        <article class="service-card card-surface reveal" data-category="preventive ongoing">
+          <span class="tag">Women’s health</span>
+          <h3>Women’s wellbeing services</h3>
+          <p>Supportive, continuity-based care including screening discussions, wellbeing concerns, and routine reviews.</p>
+          <ul>
+            <li>Private and respectful care pathways</li>
+            <li>Plain-language health information</li>
+            <li>Screening and ongoing support</li>
+          </ul>
+        </article>
+
+        <article class="service-card card-surface reveal" data-category="ongoing digital">
+          <span class="tag">Follow-up care</span>
+          <h3>Medication review appointments</h3>
+          <p>Review your treatment plan, ask questions about medicines, and discuss side effects or ongoing management needs.</p>
+          <ul>
+            <li>Medication check-ins</li>
+            <li>Suitable for in-person or selected remote follow-up</li>
+            <li>Clear care continuity support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split-layout">
+        <div>
+          <p class="eyebrow">How care usually works</p>
+          <h2>A simple path from first contact to follow-up</h2>
+          <p class="section-text">Healthcare feels easier when each step is clear. This pathway helps patients understand what usually happens before, during, and after an appointment.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-step card-surface reveal">
+            <span>Step 1</span>
+            <h3>Choose a service</h3>
+            <p>Browse service categories, compare options, and decide whether you need a general consultation, review, or telehealth appointment.</p>
+          </article>
+          <article class="timeline-step card-surface reveal">
+            <span>Step 2</span>
+            <h3>Send an enquiry</h3>
+            <p>Share your details, preferred service, and a short message so the clinic can guide your next step.</p>
+          </article>
+          <article class="timeline-step card-surface reveal">
+            <span>Step 3</span>
+            <h3>Attend your appointment</h3>
+            <p>Visit the clinic or connect virtually for advice, assessment, treatment planning, or ongoing care review.</p>
+          </article>
+          <article class="timeline-step card-surface reveal">
+            <span>Step 4</span>
+            <h3>Continue with follow-up support</h3>
+            <p>Return for reviews, repeat care, medication discussions, or ongoing condition management as needed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container comparison-panel card-surface reveal">
+        <div>
+          <p class="eyebrow">What to expect</p>
+          <h2>Practical, respectful care supported by a clearer digital experience</h2>
+        </div>
+        <div class="comparison-grid">
+          <article>
+            <h3>Clear information</h3>
+            <p>Service summaries are short, direct, and written in plain language to help people decide faster.</p>
+          </article>
+          <article>
+            <h3>Consistent pathways</h3>
+            <p>Actions, labels, and layout stay consistent across pages so patients know where to go next.</p>
+          </article>
+          <article>
+            <h3>Easy access</h3>
+            <p>Mobile-friendly pages and quick contact options make it easier to reach the clinic on any device.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="brand footer-brand" aria-label="HarborCare home">
+          <span class="brand-mark" aria-hidden="true">H</span>
+          <span>
+            <strong>HarborCare</strong>
+            <small>Family &amp; Primary Care</small>
+          </span>
+        </a>
+        <p>Local primary care with a calm, modern experience for everyday appointments, preventive support, and ongoing health management.</p>
+      </div>
+      <div>
+        <h2>Explore</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="footer-links">
+          <li><a href="tel:+61280124450">(02) 8012 4450</a></li>
+          <li><a href="mailto:hello@harborcare.com.au">hello@harborcare.com.au</a></li>
+          <li>Mon–Fri 8:00am–6:00pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 HarborCare. All rights reserved.</p>
+      <a href="#top" class="text-link">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
